@@ -4,8 +4,8 @@ import joblib
 
 model_enrollment = joblib.load("models/model_enrollment.pkl")
 model_revenue = joblib.load("models/model_revenue.pkl")
-course_data = pd.read_csv("data/course_data.csv")
-category_revenue = pd.read_csv("data/category_revenue.csv")
+course_data = pd.read_excel("data/course_data.xls")
+category_revenue = pd.read_excel("data/category_revenue.xls")
 
 st.set_page_config(page_title="EduPro Demand & Revenue Forecasting", layout="wide")
 st.title("EduPro: Course Demand & Revenue Forecasting")
