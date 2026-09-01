@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model_enrollment = joblib.load("model_enrollment.pkl")
-model_revenue = joblib.load("model_revenue.pkl")
-course_data = pd.read_csv("course_data.csv")
-category_revenue = pd.read_csv("category_revenue.csv")
+model_enrollment = joblib.load("models/model_enrollment.pkl")
+model_revenue = joblib.load("models/model_revenue.pkl")
+course_data = pd.read_csv("data/course_data.csv")
+category_revenue = pd.read_csv("data/category_revenue.csv")
 
 st.set_page_config(page_title="EduPro Demand & Revenue Forecasting", layout="wide")
 st.title("EduPro: Course Demand & Revenue Forecasting")
